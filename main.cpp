@@ -89,6 +89,10 @@ void updateParticles(int scene){
     }
 }
 
+// ============================================================
+// SCENE 1 - AIRPORT
+// ============================================================
+
 float ap_planeX=-1.0f, ap_planeY=-0.4f;
 float ap_runwayX=0.0f;
 float ap_cloudX[4]={-1.2f,-0.4f,0.6f,0.8f};
@@ -354,6 +358,10 @@ void updateAirport(){
     }
 }
 
+// ============================================================
+// SCENE 2 - TRAIN
+// ============================================================
+
 float tr_trainX=-1.6f;
 float tr_cloudX[4]={-1.2f,-0.5f,0.3f,1.0f};
 float tr_birdX[3]={1.2f,0.6f,-0.2f};
@@ -603,6 +611,10 @@ void updateTrain(){
     if(tr_starCnt>15){ tr_starsVisible=!tr_starsVisible; tr_starCnt=0; }
 }
 
+// ============================================================
+// SCENE 3 - BOAT
+// ============================================================
+
 float bo_timeVal=0, bo_waveOff=0, bo_bezOff=0;
 float bo_cloudX[3]={-320,-80,180};
 float bo_cloudY[3]={290,310,300};
@@ -800,6 +812,10 @@ void updateBoat(){
         if(bo_gullX[i]>420) bo_gullX[i]=-420;
     }
 }
+
+// ============================================================
+// SCENE 4 - BUS
+// ============================================================
 
 float bu_busX=-520.0f, bu_busDir=1, bu_busSpeed=2;
 float bu_busScale=1, bu_busZoom=1, bu_wheelAngle=0, bu_busRot=0, bu_busRotTarget=0;
