@@ -1,11 +1,10 @@
-# 🚗 4 Scene Transportation Environment
-### Computer Graphics Project — OpenGL / GLUT
+# 4 Scene Transportation Environment
 
-A real-time animated 2D scene simulator built with **C++ and OpenGL (GLUT)**, featuring four fully interactive transportation environments. Switch between scenes, control weather, toggle day/night, and adjust animation speed — all from the keyboard.
+> A real-time animated 2D scene simulator built with **C++ and OpenGL (GLUT)**, featuring four fully interactive transportation environments. Switch between scenes, control weather, toggle day/night, and adjust animation speed — all from the keyboard.
 
 ---
 
-## 🎬 Scenes
+## Scenes
 
 | Key | Scene | Description |
 |-----|-------|-------------|
@@ -16,34 +15,50 @@ A real-time animated 2D scene simulator built with **C++ and OpenGL (GLUT)**, fe
 
 ---
 
-## 🎮 Controls
+## Features
+
+- **4 unique animated scenes** — each independently controllable
+- **Per-scene state** — weather, speed, and day/night mode are all independent per scene
+- **Dynamic weather** — rain and snow particles cover the full screen; sun disappears during rain/snow
+- **Day / Night mode** — night shows moon, stars, runway lights, floodlights, and glowing windows
+- **Smooth animations** — plane takeoff, train loop, boat bobbing with waves, bus wraparound
+- **Interactive speed control** — adjust animation speed with arrow keys or mouse clicks
+- **Persistent HUD** — always shows the active scene and available controls
+
+---
+
+## Controls
 
 ### Scene Switching
+
 | Key | Action |
 |-----|--------|
-| `1` | Switch to Airport Scene |
-| `2` | Switch to Train Scene |
-| `3` | Switch to Boat Scene |
-| `4` | Switch to Bus Scene |
+| `1` | Airport Scene |
+| `2` | Train Scene |
+| `3` | Boat Scene |
+| `4` | Bus Scene |
 
 ### Weather
+
 | Key | Action |
 |-----|--------|
-| `R` | Rain (hides sun) |
-| `W` | Winter / Snow (hides sun) |
+| `R` | Rain — hides sun, enables rain particles |
+| `W` | Winter / Snow — hides sun, enables snow particles |
 | `S` | Sunny / Clear weather |
 
 ### Day & Night
+
 | Key | Action |
 |-----|--------|
-| `N` | Night mode (moon + stars) |
 | `D` | Day mode |
+| `N` | Night mode — moon, stars, and scene lighting |
 
 ### Animation
-| Key | Action |
-|-----|--------|
-| `P` | Pause scene |
-| `C` | Resume scene |
+
+| Key / Input | Action |
+|-------------|--------|
+| `P` | Pause |
+| `C` | Resume |
 | `→` Right Arrow | Speed up |
 | `←` Left Arrow | Slow down |
 | Left Click | Speed up |
@@ -52,72 +67,56 @@ A real-time animated 2D scene simulator built with **C++ and OpenGL (GLUT)**, fe
 
 ---
 
-## ✨ Features
-
-- **4 unique animated scenes** — each independently controllable
-- **Per-scene state** — weather, speed, day/night are all independent per scene
-- **Dynamic weather** — rain and snow particles cover the full screen; sun disappears during rain/snow
-- **Day / Night mode** — night shows moon, stars, runway lights, floodlights, glowing windows
-- **Smooth animations** — plane takeoff, train loop, boat bobbing with waves, bus wraparound
-- **Interactive speed control** — adjust animation speed with arrow keys or mouse clicks
-- **Persistent HUD** — always shows active scene and available controls
-
----
-
-## 🛠️ Build Instructions
+## Build & Run
 
 ### Requirements
+
 - GCC / G++ compiler
 - OpenGL
 - GLUT or FreeGLUT
 
-### Linux / Mac
+### Linux / macOS
+
 ```bash
 g++ main.cpp -o scenes -lGL -lGLU -lglut -lm
 ./scenes
 ```
 
-### Windows (MinGW / Code::Blocks)
+### Windows (MinGW)
+
 ```bash
-g++ main.cpp -o scenes -lopengl32 -lglu32 -lfreeglut -lm
+g++ main.cpp -o scenes.exe -lfreeglut -lopengl32 -lglu32 -lm
+scenes.exe
 ```
-Or simply open the `.cbp` file in **Code::Blocks** and press **Build & Run**.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 4_SCENE_OF_TRANSPORTATION_ENVIRONMENT/
 │
-├── main.cpp          # Full source code (~1150 lines)
-├── README.md         # Project documentation
-├── bin/              # Compiled output
-└── obj/              # Object files
+├── main.cpp        # Full source code (~1150 lines)
+├── README.md       # Project documentation
+├── bin/            # Compiled output
+└── obj/            # Object files
 ```
 
 ---
 
-## 👨‍💻 Developer
+## Team
 
-**SAKIB** — American International University  
-Course: Computer Graphics  
-Project: 4 Scene Transportation Environment
+This project was developed as part of the **Computer Graphics** course at **American International University-Bangladesh (AIUB)**.
 
----
-
-## 📸 Scene Preview
-
-```
-Scene 1 — Airport     |  Scene 2 — Train
-✈️ Plane takes off     |  🚂 Train moves on rails
-🌙 Night with lights   |  🌄 Hills and river
-
-Scene 3 — Boat        |  Scene 4 — Bus
-⛵ Boat sails ocean    |  🚌 Bus drives through city
-🌊 Bezier waves        |  🏢 Buildings and trees
-```
+| Developer | Scene | Contact |
+|-----------|-------|---------|
+| MD Ashraf Uddin | ✈️ Scene 1 — Airport | 23-52310-2@student.aiub.edu |
+| Nandita Banik | 🚂 Scene 2 — Train | 23-52315-2@student.aiub.edu |
+| Kanij Fatima Bushra | ⛵ Scene 3 — Boat | 23-54351-3@student.aiub.edu |
+| Nazmus Sakib Sami | 🚌 Scene 4 — Bus | 23-52319-2@student.aiub.edu |
 
 ---
 
-> **Note:** All 4 scenes share the same executable. Press `1`–`4` to switch between them at any time.
+<p align="center">
+  Made with ❤️ using C++ and OpenGL &nbsp;|&nbsp; AIUB Computer Graphics Course
+</p>
