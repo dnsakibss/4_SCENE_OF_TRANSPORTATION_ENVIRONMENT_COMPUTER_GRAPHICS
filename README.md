@@ -110,10 +110,11 @@ This project was developed as part of the **Computer Graphics** course at **Amer
 
 | Developer | Scene | Contact |
 |-----------|-------|---------|
+| Nazmus Sakib Sami | 🚌 Scene 4 — Bus | 23-52319-2@student.aiub.edu |
+| Kanij Fatima Bushra | ⛵ Scene 3 — Boat | 23-54351-3@student.aiub.edu |
 | MD Ashraf Uddin | ✈️ Scene 1 — Airport | 23-52310-2@student.aiub.edu |
 | Nandita Banik | 🚂 Scene 2 — Train | 23-52315-2@student.aiub.edu |
-| Kanij Fatima Bushra | ⛵ Scene 3 — Boat | 23-54351-3@student.aiub.edu |
-| Nazmus Sakib Sami | 🚌 Scene 4 — Bus | 23-52319-2@student.aiub.edu |
+
 
 ---
 
