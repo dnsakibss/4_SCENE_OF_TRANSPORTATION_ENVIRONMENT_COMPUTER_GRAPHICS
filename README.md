@@ -1,5 +1,9 @@
 # 4 Scene Transportation Environment
 
+<p align="center">
+  <img src="screenshots/banner.png" alt="4 Scene Transportation Environment" width="100%">
+</p>
+
 > A real-time animated 2D scene simulator built with **C++ and OpenGL (GLUT)**, featuring four fully interactive transportation environments. Switch between scenes, control weather, toggle day/night, and adjust animation speed — all from the keyboard.
 
 ---
@@ -12,6 +16,36 @@
 | `2` | 🚂 Train | A colorful train runs along a railway through hills, river, trees and flowers |
 | `3` | ⛵ Boat | A sailing boat moves across the ocean with waves, island, lighthouse and seagulls |
 | `4` | 🚌 Bus | A city bus drives along a road past buildings, trees and a car |
+
+---
+
+## Screenshots
+
+### Day
+
+| ✈️ Airport | 🚂 Train |
+|:---:|:---:|
+| ![Airport Day](screenshots/1_airport_day.png) | ![Train Day](screenshots/2_train_day.png) |
+
+| ⛵ Boat | 🚌 Bus |
+|:---:|:---:|
+| ![Boat Day](screenshots/3_boat_day.png) | ![Bus Day](screenshots/4_bus_day.png) |
+
+### Night
+
+| ✈️ Airport | 🚂 Train |
+|:---:|:---:|
+| ![Airport Night](screenshots/1_airport_night.png) | ![Train Night](screenshots/2_train_night.png) |
+
+| ⛵ Boat | 🚌 Bus |
+|:---:|:---:|
+| ![Boat Night](screenshots/3_boat_night.png) | ![Bus Night](screenshots/4_bus_night.png) |
+
+### Weather
+
+| 🚂 Train — Snow | 🚌 Bus — Rain |
+|:---:|:---:|
+| ![Train Snow](screenshots/2_train_snow.png) | ![Bus Rain](screenshots/4_bus_rain.png) |
 
 ---
 
@@ -98,6 +132,7 @@ scenes.exe
 │
 ├── main.cpp        # Full source code (~1150 lines)
 ├── README.md       # Project documentation
+├── screenshots/    # Scene screenshots used in this README
 ├── bin/            # Compiled output
 └── obj/            # Object files
 ```
